@@ -118,33 +118,7 @@ def get_code_snippet(language):
         }
         ```
         """,
-        "php": """
-        Here's a simple PHP code snippet:
-        ```php
-        <?php
-        echo "Hello, World!";
-        ?>
-        ```
-        """,
-        "html5": """
-        Here's a simple HTML5 code snippet:
-        ```html
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>HTML5 Example</title>
-        </head>
-        <body>
-            <section>
-                <h2>Welcome to HTML5!</h2>
-                <p>This is an HTML5 section element.</p>
-            </section>
-        </body>
-        </html>
-        ```
-        """,
+    
         "css_grid": """
         Here's a simple CSS Grid code snippet:
         ```css
@@ -160,31 +134,7 @@ def get_code_snippet(language):
             text-align: center;
         }
         ```
-        """,
-        "flask": """
-        Here's a simple Flask (Python) code snippet:
-        ```python
-        from flask import Flask
-        app = Flask(__name__)
-
-        @app.route('/')
-        def hello_world():
-            return 'Hello, World!'
-
-        if __name__ == '__main__':
-            app.run()
-        ```
-        """,
-        "django": """
-        Here's a simple Django (Python) code snippet:
-        ```python
-        from django.http import HttpResponse
-        from django.shortcuts import render
-
-        def hello_world(request):
-            return HttpResponse("Hello, World!")
-        ```
-        """
+        """,    
     }
 
     return snippets.get(language.lower(), "Sorry, I do not have a code snippet for that language. Try another language!")
